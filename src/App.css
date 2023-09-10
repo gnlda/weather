@@ -67,7 +67,7 @@ button:hover img {
 .info__sub-box {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 50px;
+  gap: 80px;
 }
 
 h1 {
