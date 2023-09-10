@@ -11,9 +11,9 @@ const Info = ({ weather, isLoading }) => {
         && weather.status !== 'Thunderstorm'
         && weather.status !== 'Clear'
         && weather.status !== 'Clouds') {
-        weatherImgSrc = `src/img/Clouds.svg`;
+        weatherImgSrc = `img/Clouds.svg`;
     } else {
-        weatherImgSrc = `src/img/${weather.status}.svg`;
+        weatherImgSrc = `img/${weather.status}.svg`;
     }
 
     return (
@@ -28,14 +28,14 @@ const Info = ({ weather, isLoading }) => {
                     </div>
                     <div className="info__sub-box">
                         <div className="humidity">
-                            <img src="src/img/humidity.svg" alt="humidity" width={'60px'} />
+                            <img src="img/humidity.svg" alt="humidity" width={'60px'} />
                             <div className="humidity__text">
                                 <h3>{weather.humidity}%</h3>
                                 <p>Humidity</p>
                             </div>
                         </div>
                         <div className="wind">
-                            <img src="src/img/wind.svg" alt="wind" width={'60px'} />
+                            <img src="img/wind.svg" alt="wind" width={'60px'} />
                             <div className="wind__text">
                                 <h3>{weather.wind} km/h</h3>
                                 <p>Wind Speed</p>
